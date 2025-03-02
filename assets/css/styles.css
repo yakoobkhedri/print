@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "IranSans-Regular";
+    src: url('../fonts/woff/IRANSansWeb\(FaNum\).woff') format("woff");
+}
+@font-face {
+    font-family: "IranSans-Bold";
+    src: url('../fonts/woff/IRANSansWeb\(FaNum\)_Bold.woff') format("woff");
+}
+/*  */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "IranSans-Regular";
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.font-bold {
+    font-family: "IranSans-Bold";
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
+input{
+    outline: none;
+    border-radius: 6px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black;
+    background-color: #a6d0c9;
+    box-shadow:inset 0px 7px 7px -1px #0000005c;
+  }
+  .nav-link,.nav-link:focus, .nav-link:hover {
+    color: black;
+  }
+  .nav-pills .nav-link {
+    border-radius: 12px;
+    background: #a6d0c9;
+    box-shadow: 0px 0px 7px -1px gray;
+  }
+.box{
+    width: 90px;
+    height: 81px;
+  margin: 0px 5px;
+  color: rgb(0, 0, 0);
+  background: rgb(186, 235, 227);
+  border-radius: 10px;
+}
+.box:hover,.box.active{
+    background-color: #facfcf;
+    color: black;
+}
+.max-w-360{
+    max-width: 360px;
+    width: 100%;
+}
+.w-23{
+    width: 23px;
+}
+.w-35{
+    width: 35px;
+}
+.w-66{
+    width: 66px;
+}
+.w-101{
+    width: 101px;
+}
+.w-143{
+    width: 143px;
+}
+.w-167{
+    width: 167px;
+}
+.h-23{
+    height: 23px;
+}
+.h-35{
+    height: 35px;
+}
+.h-60{
+    height: 60px;
+}
+.h-100vh{
+    height: 100vh;
+}
+.h-165{
+    height: 165px;
+}
+.h-200{
+    height: 200px;
+}
+.z-2{
+    z-index: 2;
+}
+.z-99{
+    z-index: 99;
+}
+.-mt-239{
+    margin-top: -239px;
+}
+.bg-main{
+    background-color: #baebe3;
+}
+.bg-main2{
+    background-color: #06b79c;
+}
+.bg-gray{
+    background-color: #dddddd;
+}
+.text-gray2{
+    color: #777;
+}
+.text-red{
+    color: #fa0718;
+}
+.text-justify{
+    text-align: justify;
+}
+.rounded-5{
+    border-radius: 5px;
+}
+.rounded-8{
+    border-radius: 8px;
+}
+.rounded-20{
+    border-radius: 20px;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fs-11{
+    font-size: 11px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-19{
+    font-size: 19px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-31{
+    font-size: 31px;
+}
+.-mb-92{
+    margin-bottom: -92px;
+}
+.border-main-2{
+    border: 2px solid #06b79c;
+}
+.object-cover{
+    object-fit: cover;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.accordionBtn svg{
+  transition: all .4s;
+}
+.accordionBtn.active svg{
+  transform: rotate(180deg);
+}
+.accordionContent{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+}
+.accordionContent.active{
+    max-height: 2000px;
+    overflow: visible;
+}
+#textSlider p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    top: -21px;
+}
+
+#textSlider p.active {
+    opacity: 1;
+}
+#banner{
+    background-image: url('../img/banners/page-1.jpg');
+    background-size: 100% 100%;
+    margin-top: -113px;
+}
+#about{
+    background-image: url('../img/2.jpg');
+    background-size: 100% 100%;
+}
+footer{
+    padding-bottom: 1.5rem;
+}
+@media only screen and (max-width: 992px) {
+    .right-lg-52{
+        right: 52px !important;
+    }
+    .position-lg-fixed{
+        position: fixed;
+    }
+    .position-lg-static{
+        position: static !important;
+    }
+    .menu{
+        background-color: white;
+        height: 100%;
+        width: 200px;
+        z-index: 110;
+        right: -300px;
+        transition: all .4s;
+        box-shadow: 1px 10px 23px rgba(128, 128, 128, 0.314);
+    }
+    .menu.active{
+        right: 0;
+    }
+    #overlay{
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.463);
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s;
+    }
+    #overlay.active{
+       opacity: 100%;
+       visibility: visible;
+    }
+    footer{
+        padding-bottom:130px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+  #banner,#about{
+    background-size: cover;
+    height: 67vh;
+  }
+  .-mt-md-68{
+    margin-top: -68px;
+  }
+}
+@media only screen and (max-width: 576px) {
+    .fs-sm-22{
+        font-size: 22px;
+    }
+    .fs-sm-16{
+        font-size: 16px;
+    }
+    .fs-sm-14{
+        font-size: 14px;
+    }
+    .w-sm-97{
+        width: 97px;
+    }
+    .w-sm-86{
+        width: 86px;
+    }
+    .h-sm-41{
+        height: 41px;
+    }
+    .position-sm-static{
+        position: static !important;
+    }
+    #textSlider p{
+        top: -17px;
+    }
+}

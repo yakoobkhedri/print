@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>صفحه اصلی</title>
+</head>
+
+<body>
+
+  <div id="overlay"></div>
+
+  <!-- header -->
+
+  <header class="py-3 position-sticky top-0 z-99">
+    <div class="container position-relative d-flex align-items-center justify-content-between justify-content-xl-center gap-2">
+      <svg id="openmenu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list d-lg-none cursor-pointer" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <a class="position-absolute end-0 top-0 mt-1 d-block d-lg-none d-xl-block right-lg-52"><img class="w-66" alt="logo" src="assets/img/logo.png"></a>
+      <div class="d-flex flex-column menu py-4 py-lg-0 flex-lg-row align-items-center justify-content-xl-center gap-lg-1 gap-3 top-0 position-lg-fixed">
+        <a href="#banner" class="box active d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/home.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">خانه</p>
+          </div>
+        </a>
+        <a href="#" class="box d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/service.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">خدمات</p>
+          </div>
+        </a>
+        <a href="#" class="box d-block text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/home.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">قیمت پرینت</p>
+          </div>
+        </a>
+        <a href="#" class="box d-block text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/print.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">نمونه کارها</p>
+          </div>
+        </a>
+        <a href="#" class="box d-block text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/article.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">مقالات</p>
+          </div>
+        </a>
+        <a href="#" class="box d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/user.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">درباره ما</p>
+          </div>
+        </a>
+        <a href="#" class="box d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="assets/img/icon/support.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">تماس با ما</p>
+          </div>
+        </a>
+      </div>
+      <div class="position-absolute position-lg-static start-0 top-0 mt-2 d-flex align-items-center gap-1">
+        <a class="w-101 h-60 h-sm-41 w-sm-86 bg-main2 text-white rounded-5 flex-center">پنل کاربری</a>
+        <a class="w-101 h-60 h-sm-41 w-sm-86 bg-main2 text-white rounded-5 flex-center">پنل کاربری</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main>
+
+    <!-- banner -->
+    <section id="banner" class="h-100vh flex-center">
+      <div class="container text-center">
+        <div class="mb-0 fs-31 fs-sm-22 font-bold d-flex align-items-center justify-content-center">
+          فایلهای خود را 
+          <div class="text-red position-relative w-143 w-sm-97" id="textSlider">
+            <p class="mb-0">ارزان</p>
+            <p class="mb-0">سریع</p>
+            <p class="mb-0">با کیفیت</p>
+            <p class="mb-0">مطمئن</p>
+        </div>
+          پرینت کنید.
+      </div>
+        <p class="fs-24 fs-sm-16 my-4">
+          30 صفحه پرینت رایگان با ثبت نام در هدیه بگیرید.
+        </p>
+        <p class="fs-24 fs-sm-16">
+          هزینه ارسال برای سفارشات بالای 800000 تومان رایگان می باشد
+        </p>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="p-5 px-0 -mt-239 -mt-md-68">
+      <div class="container text-center font-bold">
+        <h3 class="my-5">خدمات</h3>
+        <div class="row mx-sm-5 gx-5 gy-4">
+          <div class="col-xl-4 col-md-6">
+            <div class="bg-gray rounded-8 p-3">
+              <div class="rounded-8 bg-white overflow-hidden">
+                <img alt="img" src="assets/img/service-1.jpg" class="w-100">
+              </div>
+              <p class="mt-3 mb-0 fs-19 fw-bold">پرینت سیاه و سفید</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="bg-gray rounded-8 p-3">
+              <div class="rounded-8 bg-white overflow-hidden">
+                <img alt="img" src="assets/img/service-2.jpg" class="w-100">
+              </div>
+              <p class="mt-3 mb-0 fs-19 fw-bold">پرینت رنگی</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="bg-gray rounded-8 p-3">
+              <div class="rounded-8 bg-white overflow-hidden">
+                <img alt="img" src="assets/img/service-3.jpg" class="w-100">
+              </div>
+              <p class="mt-3 mb-0 fs-19 fw-bold">چاپ نقشه پلات طولی</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="bg-gray rounded-8 p-3">
+              <div class="rounded-8 bg-white overflow-hidden">
+                <img alt="img" src="assets/img/service-4.jpg" class="w-100">
+              </div>
+              <p class="mt-3 mb-0 fs-19 fw-bold">چاپ کتاب</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="bg-gray rounded-8 p-3">
+              <div class="rounded-8 bg-white overflow-hidden">
+                <img alt="img" src="assets/img/service-6.jpg" class="w-100">
+              </div>
+              <p class="mt-3 mb-0 fs-19 fw-bold">تایپ / ترجمه</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="bg-gray rounded-8 p-3">
+              <div class="rounded-8 bg-white overflow-hidden">
+                <img alt="img" src="assets/img/service-8.jpg" class="w-100">
+              </div>
+              <p class="mt-3 mb-0 fs-19 fw-bold">صحافی و ویرایش پایان نامه</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+     <section id="price" class="my-sm-5">
+      <div class="container">
+        <div class="position-relative">
+          <h3 class="my-sm-5 text-center font-bold">قیمت پرینت</h3>
+          <a class="position-absolute position-sm-static d-block text-center mb-4 mb-sm-0 text-primary start-0 top-0 mt-1">(مشاهده کلیه قیمت ها)</a>
+        </div>
+        <ul class="nav nav-pills fs-sm-14 mb-3 pe-0 justify-content-center gap-2 font-bold" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">پرینت سیاه و سفید</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">پرینت رنگی معمولی</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">پرینت تمام رنگ</button>
+          </li>
+        </ul>
+        <div class="tab-content mx-lg-5 px-lg-5" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <h4 class="my-5 text-center font-bold fs-sm-16">قیمت هر برگ پرینت سیاه و سفید (دی 1400)</h4>
+            <ul class="nav nav-pills mb-3 pe-0 justify-content-center gap-2 font-bold" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border active" id="pills-home2-tab" data-bs-toggle="pill" data-bs-target="#pills-home2" type="button" role="tab" aria-controls="pills-home2" aria-selected="true">A5</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border" id="pills-profile2-tab" data-bs-toggle="pill" data-bs-target="#pills-profile2" type="button" role="tab" aria-controls="pills-profile2" aria-selected="false">A4</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border" id="pills-contact2-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact2" aria-selected="false">A3</button>
+              </li>
+            </ul>
+            <div class="tab-content m-5 mx-0 mx-md-5" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <h4 class="my-5 text-center font-bold fs-sm-16">قیمت هر برگ پرینت رنگی معمولی (دی 1400)</h4>
+            <ul class="nav nav-pills mb-3 pe-0 justify-content-center gap-2 font-bold" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border active" id="pills-home3-tab" data-bs-toggle="pill" data-bs-target="#pills-home3" type="button" role="tab" aria-controls="pills-home3" aria-selected="true">A5</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border" id="pills-profile3-tab" data-bs-toggle="pill" data-bs-target="#pills-profile3" type="button" role="tab" aria-controls="pills-profile3" aria-selected="false">A4</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border" id="pills-contact3-tab" data-bs-toggle="pill" data-bs-target="#pills-contact3" type="button" role="tab" aria-controls="pills-contact3" aria-selected="false">A3</button>
+              </li>
+            </ul>
+            <div class="tab-content m-5 mx-0 mx-md-5" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home3" role="tabpanel" aria-labelledby="pills-home3-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact3-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <h4 class="my-5 text-center font-bold fs-sm-16">قیمت هر برگ پرینت تمام رنگ (دی 1400)</h4>
+            <ul class="nav nav-pills mb-3 pe-0 justify-content-center gap-2 font-bold" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border active" id="pills-home4-tab" data-bs-toggle="pill" data-bs-target="#pills-home4" type="button" role="tab" aria-controls="pills-home4" aria-selected="true">A5</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border" id="pills-profile4-tab" data-bs-toggle="pill" data-bs-target="#pills-profile4" type="button" role="tab" aria-controls="pills-profile4" aria-selected="false">A4</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-white border" id="pills-contact4-tab" data-bs-toggle="pill" data-bs-target="#pills-contact4" type="button" role="tab" aria-controls="pills-contact4" aria-selected="false">A3</button>
+              </li>
+            </ul>
+            <div class="tab-content m-5 mx-0 mx-md-5" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home4" role="tabpanel" aria-labelledby="pills-home4-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile4" role="tabpanel" aria-labelledby="pills-profile4-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact4" role="tabpanel" aria-labelledby="pills-contact4-tab" tabindex="0">
+                <div class="bg-white rounded-5 border overflow-hidden shadow mx-lg-5">
+                  <div class="row mx-0 g-2 font-bold text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">تعداد برگ</div>
+                    <div class="col-4">قیمت یکرو</div>
+                    <div class="col-4">قیمت دورو</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">1-499</div>
+                    <div class="col-4">2000</div>
+                    <div class="col-4">3000</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2 border-bottom border-secondary">
+                    <div class="col-4">999-500</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2600</div>
+                  </div>
+                  <div class="row mx-0 g-2 font-bold fs-14 text-center py-2">
+                    <div class="col-4">1000 به بالا</div>
+                    <div class="col-4">1500</div>
+                    <div class="col-4">2000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- blog -->
+    <section id="blog" class="py-2">
+      <div class="container">
+        <div class="position-relative">
+          <h3 class="my-sm-5 text-center font-bold">آخرین مقالات</h3>
+          <a class="position-absolute position-sm-static d-block text-center mb-4 mb-sm-0 text-primary start-0 top-0 mt-1">(مشاهده کلیه مقالات)</a>
+        </div>
+        <div class="mt-3">
+          <div class="swiper blog py-4 px-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2">
+                    <a class="text-muted h5">تاریخچه کتاب</a>
+                    <p class="mb-0 mt-2">
+                      ابداع چاپ یکی از مهم‌ترین رویدادهایی است که در زندگی
+                      بشر تحول عظیمی ایجاد کرد. فرآیند چاپی ک...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2">
+                    <a class="text-muted h5">تاریخچه کتاب</a>
+                    <p class="mb-0 mt-2">
+                      ابداع چاپ یکی از مهم‌ترین رویدادهایی است که در زندگی
+                      بشر تحول عظیمی ایجاد کرد. فرآیند چاپی ک...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2">
+                    <a class="text-muted h5">تاریخچه کتاب</a>
+                    <p class="mb-0 mt-2">
+                      ابداع چاپ یکی از مهم‌ترین رویدادهایی است که در زندگی
+                      بشر تحول عظیمی ایجاد کرد. فرآیند چاپی ک...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2">
+                    <a class="text-muted h5">تاریخچه کتاب</a>
+                    <p class="mb-0 mt-2">
+                      ابداع چاپ یکی از مهم‌ترین رویدادهایی است که در زندگی
+                      بشر تحول عظیمی ایجاد کرد. فرآیند چاپی ک...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="m-sm-5 mx-0 mx-lg-5 p-5 px-0 px-lg-5 py-1">
+      <div class="container">
+        <div class="rounded-8 shadow p-4 mx-md-5">
+          <h3 class="my-4 text-center font-bold">همکاری با موسسات، شرکت ها، مدارس و ...</h3>
+          <div class="row mx-0 g-4 align-items-center">
+             <div class="col-lg-6">
+              <p class="lh-lg mb-0">
+                همراه پرینت با توجه به خدمات ارزان و با کیفیت در زمینه چاپ، دیجیتال توانایی ارائه خدمات به کلیه موسسات، شرکت ها، مدارس و ... را دارد.<br>
+                جهت اطلاع از قیمت خدمات موسسات و مدارس لطفا شماره خود را ثبت نمایید تا در اسرع وقت با شما تماس حاصل گردد.
+              </p>
+             </div>
+             <div class="col-lg-6">
+              <form>
+                <input placeholder="مثال: 09149492490" class="fw-bold d-block mx-auto border p-2" type="tel">
+                <input type="submit" class="border-0 rounded-5 bg-main text-dark fw-bold mx-auto mt-3 fs-14 py-1 px-2 d-block" value="ثبت شماره">
+              </form>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="py-2">
+      <div class="container">
+        <div class="position-relative">
+          <h3 class="my-sm-5 mt-4 mt-sm-5 text-center font-bold">نمونه کارها</h3>
+          <a class="position-absolute position-sm-static d-block text-center mb-4 mb-sm-0 text-primary start-0 top-0 mt-1">(مشاهده کلیه نمونه کارها)</a>
+        </div>
+        <div class="mt-3">
+          <div class="swiper portfolio py-4 px-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow-sm bg-gray">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2 py-3">
+                    <a class="text-center font-bold text-muted mb-0 h5 d-block">
+                      نمونه صحافی پاین نامه
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow-sm bg-gray">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2 py-3">
+                    <a class="text-center font-bold text-muted mb-0 h5 d-block">
+                      نمونه صحافی پاین نامه
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow-sm bg-gray">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2 py-3">
+                    <a class="text-center font-bold text-muted mb-0 h5 d-block">
+                      نمونه صحافی پاین نامه
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow-sm bg-gray">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2 py-3">
+                    <a class="text-center font-bold text-muted mb-0 h5 d-block">
+                      نمونه صحافی پاین نامه
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-8 overflow-hidden shadow-sm bg-gray">
+                  <div>
+                    <img alt="img" src="assets/img/articles/1650542906.03811article-2.jpg"
+                      class="w-100 h-165 object-cover">
+                  </div>
+                  <div class="p-2 py-3">
+                    <a class="text-center font-bold text-muted mb-0 h5 d-block">
+                      نمونه صحافی پاین نامه
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="h-100vh">
+      <div class="container text-center">
+        <p class="mb-0 fs-24 fs-sm-16 font-bold mt-sm-5 pt-5">
+          ما مسئولانه کار میکنیم
+        </p>
+        <p class="fs-24 fs-sm-16 my-2">
+          و به ازای چاپ هر 5000 برگ یک درخت میکاریم که
+        </p>
+        <p class="fs-24 fs-sm-16">
+          برای 8500 برگ چاپ جدید کاغذ تولید می کند.
+        </p>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about2" class="py-5">
+      <div class="container px-0 px-md-3">
+        <h3 class="mt-3 mb-sm-5 mb-4 text-center font-bold">چرا همراه پرینت؟</h3>
+        <div class="row mx-0 g-4 gy-5">
+          <div class="col-lg-6">
+            <div class="rounded-8 bg-gray py-5 px-sm-4 px-3">
+              <h5 class="fs-18 text-gray2"> درباره ما </h5>
+              <p class="text-secondary fs-18 mt-4">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون بلکه روزنامه و مجل...
+              </p>
+              <a class="d-flex align-items-center justify-content-end gap-1">
+                <p class="mb-0">ادامه مطلب</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                </svg>
+              </a>
+              <div class="bg-main rounded-8 p-4 mt-4 -mb-92">
+                <h4 class="fs-20 fw-bold">مشتریان</h4>
+                <div class="swiper customer pt-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img alt="img" src="assets/img/articles/1653722446.07881customer2.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="assets/img/articles/1653722428.6321customer1.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="assets/img/articles/1653722410.65461customer3.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="assets/img/articles/1653722446.07881customer2.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img alt="img" src="assets/img/articles/1653729872.70621about.jpg" class="rounded-8 w-100 h-100 mt-5 mt-lg-0">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faqs -->
+    <section id="faqs" class="px-lg-5 mx-lg-5 py-5">
+      <div class="container px-md-5">
+        <h3 class="mt-3 text-center font-bold mb-sm-5 mb-4">سوالات متداول</h3>
+        <div class="mx-md-5">
+          <div class="bg-white fs-sm-14 rounded-8 shadow px-3 py-4 mx-md-5 overflow-hidden">
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+            <div class="border-bottom border-secondary py-2">
+              <div class="d-flex align-items-center justify-content-between gap-2 cursor-pointer accordionBtn fw-bold">
+                <p class="mb-0">نحوه سفارش گذاری به چه صورت است؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                  <p class="mt-2 mb-0 fs-14">
+                    به صورت حضوری و غیرحضوری امکان سفارش گذاری وجود دارد.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-gray pt-4 mt-sm-5">
+    <div class="container">
+      <div class="row mx-0 g-4">
+        <div class="col-xl-3 col-lg-4">
+           <h5 class="font-bold">تماس با ما</h5>
+           <div class="ms-5 my-4">
+            <a class="d-flex align-items-center justify-content-end gap-1 mb-2">
+              <p class="mb-0 fw-bold text-dark">021-6646776</p>
+              <div class="flex-center w-35 h-35 rounded-5 bg-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone text-white" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="d-flex align-items-center justify-content-end gap-1 mb-2">
+              <p class="mb-0 fw-bold text-dark">09360006692</p>
+              <div class="flex-center w-35 h-35 rounded-5 bg-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone text-white" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="d-flex align-items-center justify-content-end gap-1 mb-2">
+              <p class="mb-0 fw-bold text-dark">inf@yahoo.com</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="35" fill="currentColor" class="bi bi-envelope-fill text-dark" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+              </svg>
+            </a>
+           </div>
+           <p class="text-justify">
+            آدرس: شیراز، میدان انقلاب، خ انقلاب، و 12 فروردین ساختمان 310 زیر همکف
+           </p>
+           <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0246229459626!2d51.39144231525939!3d35.70101168018984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ec5dabaefc4a340!2zMzXCsDQyJzAzLjYiTiA1McKwMjMnMzcuMSJF!5e0!3m2!1sen!2sde!4v1653744781198!5m2!1sen!2sde"
+           width="100%"
+           height="200"
+           style="border: 0"
+           allowfullscreen=""
+           loading="lazy"
+           referrerpolicy="no-referrer-when-downgrade"
+         ></iframe>
+        </div>
+        <div class="col-lg-3 col-md-6 mx-auto">
+          <h5 class="font-bold mb-4">لینک در دسترس</h5>
+          <ul class="list-unstyled pe-0">
+            <li class="mb-4">
+              <a>صفحه اصلی</a>
+              </li>
+              <li class="mb-4">
+                <a>پرینت سیاه سفید</a>
+              </li>
+              <li class="mb-4">
+                <a>پرینت رنگی</a>
+              </li>
+              <li class="mb-4">
+                <a>فهرست مقالات</a>
+              </li>
+              <li>
+                <a>تیکت پشتیبانی</a>
+              </li>
+            </li>
+          </ul>
+          <h5 class="font-bold my-4">شبکه های اجتماعی</h5>
+          <div>
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <h5 class="font-bold mb-4">راهنمایی</h5>
+          <ul class="list-unstyled pe-0">
+            <li class="mb-4">
+              <a>قوانین سایت</a>
+              </li>
+              <li class="mb-4">
+                <a>نحوه سفارش گذاری</a>
+              </li>
+              <li class="mb-4">
+                <a>درباره ما</a>
+              </li>
+              <li>
+                <a>تماس با ما</a>
+              </li>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <a class="bg-white p-1 w-167 h-200">
+              <img alt="img" src="assets/img/ENAMADpng.parspng.com_.png" class="w-100">
+            </a>
+            <a class="bg-white p-1 w-167 h-200">
+              <img alt="img" src="assets/img/samandehi.png" class="w-100 h-100">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fs-11 px-2 fw-bold d-lg-none mx-auto end-0 start-0 bottom-0 position-fixed z-2">
+   <div class="d-flex gap-2 max-w-360 m-3 mx-auto border-main-2 rounded-20 p-2 align-items-center justify-content-center">
+    <a href="#banner" class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 active d-block text-center d-flex align-items-center justify-content-center">
+      <div>
+        <img alt="img" src="assets/img/icon/home.png" class="d-block mx-auto w-23 h-23">
+        <p class="mb-0 mt-1">خانه</p>
+      </div>
+    </a>
+    <a href="#" class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 d-block text-center d-flex align-items-center justify-content-center">
+      <div>
+        <img alt="img" src="assets/img/icon/service.png" class="d-block mx-auto w-23 h-23">
+        <p class="mb-0 mt-1">خدمات</p>
+      </div>
+    </a>
+    <a href="#" class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 d-block text-center d-flex align-items-center justify-content-center">
+      <div>
+        <img alt="img" src="assets/img/icon/user.png" class="d-block mx-auto w-23 h-23">
+        <p class="mb-0 mt-1">درباره ما</p>
+      </div>
+    </a>
+    <a href="#" class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 d-block text-center d-flex align-items-center justify-content-center">
+      <div>
+        <img alt="img" src="assets/img/icon/support.png" class="d-block mx-auto w-23 h-23">
+        <p class="mb-0 mt-1">تماس با ما</p>
+      </div>
+    </a>
+   </div>
+  </div>
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
