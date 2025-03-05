@@ -32,7 +32,7 @@ input{
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: black;
-    background-color: #a6d0c9;
+    background-color: #baebe3;
     box-shadow:inset 0px 7px 7px -1px #0000005c;
   }
   .nav-link,.nav-link:focus, .nav-link:hover {
@@ -40,7 +40,7 @@ input{
   }
   .nav-pills .nav-link {
     border-radius: 12px;
-    background: #a6d0c9;
+    background: #baebe3;
     box-shadow: 0px 0px 7px -1px gray;
   }
 .box{
@@ -255,7 +255,7 @@ footer{
     height: 67vh;
   }
   .-mt-md-68{
-    margin-top: -68px;
+    margin-top: -143px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -268,14 +268,32 @@ footer{
     .fs-sm-14{
         font-size: 14px;
     }
+    .fs-sm-12{
+        font-size: 12px;
+    }
+    .fs-sm-11{
+        font-size: 11px;
+    }
     .w-sm-97{
         width: 97px;
     }
     .w-sm-86{
         width: 86px;
     }
+    .w-sm-48{
+        width: 48px;
+    }
+    .w-sm-24{
+        width: 24px;
+    }
+    .h-sm-95{
+        height: 95px;
+    }
     .h-sm-41{
         height: 41px;
+    }
+    .right-sm-38{
+        right: 38px !important;
     }
     .position-sm-static{
         position: static !important;
