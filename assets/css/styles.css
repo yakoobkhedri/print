@@ -32,7 +32,7 @@ input{
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: black;
-    background-color: #baebe3;
+    background-color: white;
     box-shadow:inset 0px 7px 7px -1px #0000005c;
   }
   .nav-link,.nav-link:focus, .nav-link:hover {
@@ -40,7 +40,7 @@ input{
   }
   .nav-pills .nav-link {
     border-radius: 12px;
-    background: #baebe3;
+    background: white;
     box-shadow: 0px 0px 7px -1px gray;
   }
 .box{
@@ -138,6 +138,9 @@ input{
 }
 .fs-11{
     font-size: 11px;
+}
+.fs-12{
+    font-size: 12px;
 }
 .fs-13{
     font-size: 13px;
