@@ -65,8 +65,17 @@ input{
 .w-35{
     width: 35px;
 }
+.w-40{
+    width: 40px;
+}
 .w-44{
     width: 44px;
+}
+.w-46{
+    width: 46px;
+}
+.w-53{
+    width: 53px;
 }
 .w-66{
     width: 66px;
@@ -95,8 +104,17 @@ input{
 .h-44{
     height: 44px;
 }
+.h-51{
+    height: 51px;
+}
+.h-63{
+    height: 63px;
+}
 .h-60{
     height: 60px;
+}
+.h-78{
+    height: 78px;
 }
 .h-100vh{
     height: 100vh;
@@ -214,11 +232,24 @@ input{
 .border-7-white{
     border: 7px solid white;
 }
+.border-dashed-2{
+    border: 2px dashed black;
+}
 .object-cover{
     object-fit: cover;
 }
+.opacity-0{
+    opacity: 0;
+}
 .cursor-pointer{
     cursor: pointer;
+}
+.size{
+    transition: all .4s;
+}
+.size.active{
+    background-color: rgba(255, 0, 0, 0.892) !important;
+    color: white;
 }
 .accordionBtn svg{
   transition: all .4s;

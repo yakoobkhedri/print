@@ -123,10 +123,68 @@
             </div>
             <a class="rounded-8 bg-main3 py-2 px-3 text-white">راهنمای ثبت سفارش</a>
           </div>
-          <div class="row mx-0 gx-3 mt-3">
-           <div class="col-lg-4 bg-gray rounded-5 p-2">
-            <h5 class="text-center fw-bold text-secondary">ارسال فایل از طریق</h5>
+          <div class="row mx-0 g-3 mt-3">
+           <div class="col-lg-4">
+             <div class="bg-gray rounded-5 p-3">
+              <h5 class="text-center fw-bold text-secondary">ارسال فایل از طریق</h5>
+             </div>
            </div>
+           <div class="col-lg-4">
+             <div class="bg-gray rounded-5 p-3">
+              <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">مشخصات پرینت فایل</h5>
+              <form class="fw-bold mt-3">
+                <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+                  <p class="fs-13 mb-0">ابعاد کاغذ</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <div class="position-relative active size border-dashed-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
+                       A5
+                       <input checked type="radio" name="size" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative size border-dashed-2 bg-white cursor-pointer w-46 h-63 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
+                       A4
+                       <input checked type="radio" name="size" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    
+                    <div class="position-relative size border-dashed-2 bg-white cursor-pointer w-53 h-78 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
+                      A3
+                      <input checked type="radio" name="size" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                   </div>
+                  </div>
+                </div>
+              </form>
+             </div>
+           </div>
+           <div class="col-lg-4">
+            <div class="bg-gray rounded-5 p-3">
+             <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">خلاصه سفارش</h5>
+             <div class="fw-bold mt-3">
+               <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+                 <p class="fs-13 mb-0">تعداد برگ</p>
+                 <p class="fs-13 mb-0">2 برگ</p>
+               </div>
+               <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+                 <p class="fs-13 mb-0">هر برگ</p>
+                 <p class="fs-13 mb-0">1000 تومان</p>
+               </div>
+               <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+                 <p class="fs-13 mb-0">مجموع</p>
+                 <p class="fs-13 mb-0">2000 تومان</p>
+               </div>
+               <div class="d-flex align-items-center justify-content-between gap-2 border-bottom border-top border-secondary py-2">
+                 <p class="fs-13 mb-0">هزینه خدمات</p>
+                 <p class="fs-13 mb-0">100 تومان</p>
+               </div>
+               <div class="d-flex align-items-center justify-content-between gap-2 border-bottom border-secondary py-2">
+                 <p class="fs-13 mb-0">قابل پرداخت</p>
+                 <p class="fw-bold mb-0 text-success">2100 تومان</p>
+               </div>
+               <div class="d-flex align-items-center justify-content-between gap-2 py-2">
+                 <a class="rounded-5 bg-white border border-info text-info py-2 px-3 fs-14">ادامه سفارش</a>
+                 <a class="rounded-5 bg-white border border-info text-info py-2 px-3 fs-14">ساخت پوشه بعدی</a>
+               </div>
+             </div>
+            </div>
+          </div>
           </div>
         </div>
     </section>
@@ -137,6 +195,7 @@
   <script src="../assets/js/swiper-bundle.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
 </body>
 
 </html>
