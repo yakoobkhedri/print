@@ -129,11 +129,11 @@
               <h5 class="text-center fw-bold text-secondary">ارسال فایل از طریق</h5>
              </div>
            </div>
-           <div class="col-lg-4">
+           <div class="col-lg-5">
              <div class="bg-gray rounded-5 p-3">
               <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">مشخصات پرینت فایل</h5>
               <form class="fw-bold mt-3">
-                <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+                <div class="d-flex align-items-center gap-2 mb-2">
                   <p class="fs-13 mb-0">ابعاد کاغذ</p>
                   <div class="d-flex align-items-end gap-2">
                     <div class="position-relative active size border-dashed-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
@@ -151,10 +151,90 @@
                    </div>
                   </div>
                 </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <p class="fs-13 mb-0">یکرو / دو رو</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <div class="position-relative flex-shrink-0 active roo border-dashed-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
+                       یکرو
+                       <input checked type="radio" name="roo" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative flex-shrink-0 roo border-dashed-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
+                       دو رو
+                       <input checked type="radio" name="roo" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <p class="mb-0 text-danger fw-bold fs-10 text-justify">(هر 100 صفحه شامل 50 برگ دو رو میباشد)<br>
+                     (قیمت هر برگ دو رو: 1000 تومان)
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <p class="fs-13 mb-0">تعداد برگ</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <input type="number" class="border border-danger rounded-5 text-center w-53">
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <p class="fs-13 mb-0">تعداد نسخه</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <input type="number" class="border border-danger rounded-5 text-center w-53">
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <p class="fs-13 mb-0">صحافی:</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <div class="position-relative flex-shrink-0 active sahafi fs-10 border-dashed-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                       نیاز ندارم
+                       <input checked type="radio" name="sahafi" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative flex-shrink-0 sahafi fs-10 border-dashed-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                       منگنه
+                       <input checked type="radio" name="sahafi" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative flex-shrink-0 sahafi fs-10 border-dashed-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                      سیمی طلق معمولی
+                      <input checked type="radio" name="sahafi" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                   </div>
+                   <div class="position-relative flex-shrink-0 sahafi fs-10 border-dashed-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                    سیمی طلق ضخیم
+                    <input checked type="radio" name="sahafi" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                 </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <p class="fs-13 mb-0">نوع صحافی:</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <div class="position-relative flex-shrink-0 active sahafitype fs-10 border-dashed-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                       همه فایل ها با هم صحافی شود
+                       <input checked type="radio" name="sahafitype" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative flex-shrink-0 sahafitype fs-10 border-dashed-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                       هر فایل جداگانه صحافی شود
+                       <input checked type="radio" name="sahafitype" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <p class="fs-13 mb-0">نوع جلد:</p>
+                  <div class="d-flex align-items-end gap-2">
+                    <div class="position-relative flex-shrink-0 active jeld fs-10 border-dashed-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                       سیاه و سفید
+                       <input checked type="radio" name="jeld" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative flex-shrink-0 jeld fs-10 border-dashed-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                       رنگی
+                       <input checked type="radio" name="jeld" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                    </div>
+                    <div class="position-relative flex-shrink-0 jeld fs-10 border-dashed-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
+                      گلاسه
+                      <input checked type="radio" name="jeld" class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
+                   </div>
+                  </div>
+                </div>
+                <textarea class="border border-danger rounded-5 bg-white p-3 outline-none w-100" placeholder="توضیحات"></textarea>
               </form>
              </div>
            </div>
-           <div class="col-lg-4">
+           <div class="col-lg-3">
             <div class="bg-gray rounded-5 p-3">
              <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">خلاصه سفارش</h5>
              <div class="fw-bold mt-3">
@@ -178,7 +258,7 @@
                  <p class="fs-13 mb-0">قابل پرداخت</p>
                  <p class="fw-bold mb-0 text-success">2100 تومان</p>
                </div>
-               <div class="d-flex align-items-center justify-content-between gap-2 py-2">
+               <div class="d-flex flex-column align-items-center justify-content-between gap-2 py-2">
                  <a class="rounded-5 bg-white border border-info text-info py-2 px-3 fs-14">ادامه سفارش</a>
                  <a class="rounded-5 bg-white border border-info text-info py-2 px-3 fs-14">ساخت پوشه بعدی</a>
                </div>
