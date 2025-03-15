@@ -83,6 +83,9 @@ input{
 .w-66{
     width: 66px;
 }
+.w-80{
+    width: 80px;
+}
 .w-86{
     width: 86px;
 }
@@ -101,11 +104,17 @@ input{
 .w-280{
     width: 218px;
 }
+.h-12{
+    height: 12px;
+}
 .h-23{
     height: 23px;
 }
 .h-35{
     height: 35px;
+}
+.h-40{
+    height: 40px;
 }
 .h-44{
     height: 44px;
@@ -196,6 +205,9 @@ input{
 }
 .rounded-20{
     border-radius: 20px;
+}
+#sidebar{
+    transition: all .4s;
 }
 .flex-center{
     display: flex;
@@ -303,6 +315,16 @@ footer{
     padding-bottom: 1.5rem;
 }
 @media only screen and (max-width: 992px) {
+    #sidebar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        right: -240px;
+    }
+    #sidebar.active{
+       right: 0;
+    }
     .right-lg-52{
         right: 52px !important;
     }
