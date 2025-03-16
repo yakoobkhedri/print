@@ -305,6 +305,47 @@ input{
 #textSlider p.active {
     opacity: 1;
 }
+
+/* scroll */
+.hiddenScroll::-webkit-scrollbar {
+    width: 1px;
+    /* Width of the scrollbar */
+    height: 1px;
+    /* Height for horizontal scrollbar */
+}
+
+/* The scrollbar track */
+.hiddenScroll::-webkit-scrollbar-track {
+    background: transparent;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* The scrollbar thumb (the draggable part) */
+.hiddenScroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #eaeff7, transparent);
+    /* Gradient effect */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 3px solid transparent;
+    /* Space around the thumb */
+}
+
+/* The scrollbar thumb on hover */
+.hiddenScroll::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #eaeff7, transparent);
+    /* Darker gradient on hover */
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+    scrollbar-color: #eaeff7 transparent;
+    /* Thumb and track colors */
+}
+
 #banner{
     background-image: url('../img/banners/page-1.jpg');
     background-size: 100% 100%;
