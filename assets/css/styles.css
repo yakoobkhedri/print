@@ -59,6 +59,10 @@ input{
     max-width: 360px;
     width: 100%;
 }
+.max-w-1300{
+    max-width: 1300px;
+    width: 100%;
+}
 .w-23{
     width: 23px;
 }
@@ -151,6 +155,9 @@ input{
 }
 .z-99{
     z-index: 99;
+}
+.z-999{
+    z-index: 999;
 }
 .-mt-239{
     margin-top: -239px;
@@ -305,7 +312,19 @@ input{
 #textSlider p.active {
     opacity: 1;
 }
-
+/* tab */
+.tabs{
+    opacity: 30%;
+}
+.tabs.active{
+    opacity: 100%;
+}
+.tabContent > div{
+    display: none;
+}
+.tabContent > div:first-child{
+   display: block;
+}
 /* scroll */
 .hiddenScroll::-webkit-scrollbar {
     width: 1px;
@@ -390,10 +409,13 @@ footer{
         transition: all .4s;
         box-shadow: 1px 10px 23px rgba(128, 128, 128, 0.314);
     }
-    .menu.active{
+    .menu.active,.menu2.active{
         right: 0;
     }
-    #overlay{
+    .menu2.active{
+        z-index: 999;
+    }
+    #overlay,#overlay2{
         position: fixed;
         inset: 0;
         width: 100%;
@@ -404,7 +426,7 @@ footer{
         visibility: hidden;
         transition: all .4s;
     }
-    #overlay.active{
+    #overlay.active,#overlay2.active{
        opacity: 100%;
        visibility: visible;
     }

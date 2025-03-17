@@ -39,9 +39,26 @@ jeld.forEach((item)=>{
 
 document.getElementById('fileInput').addEventListener('change', function(event) {
     const files = event.target.files;
-    const fileList = document.getElementById('fileList');
+    let fileList = document.getElementById('fileList');
     const maxSize = 500 * 1024 * 1024; // 500 مگابایت به بایت
     const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'image/jpeg'];
+
+    // اگر fileList وجود ندارد، آن را ایجاد کنید
+    if (!fileList) {
+        fileList = document.createElement('div');
+        fileList.id = 'fileList';
+        fileList.className = 'bg-white mt-3 p-sm-3 p-2';
+        document.querySelector('form').appendChild(fileList);
+    }
+
+    // پاک کردن محتوای قبلی fileList
+    fileList.innerHTML = '';
+
+    // اگر فایلی انتخاب نشده باشد، fileList را حذف کنید
+    if (files.length === 0) {
+        fileList.remove();
+        return;
+    }
 
     for (let i = 0; i < files.length; i++) {
         const file = files[i];
@@ -100,6 +117,11 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         // اضافه کردن رویداد حذف به دکمه
         removeButton.addEventListener('click', function() {
             fileList.removeChild(fileItem); // حذف فایل از لیست
+
+            // اگر فایلی در لیست باقی نماند، fileList را حذف کنید
+            if (fileList.children.length === 0) {
+                fileList.remove();
+            }
         });
 
         const progressContainer = document.createElement('div');
@@ -130,3 +152,25 @@ function simulateUpload(progressBar, percentNumber) {
         }
     }, 500); // هر 500 میلی‌ثانیه درصد پیشرفت افزایش می‌یابد
 }
+
+// tabs
+
+let tabs = Array.from(document.querySelectorAll('.tabs'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+
+
+tabs.forEach((item) => {
+  item.addEventListener('click', function() {
+    tabs.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.style.display = 'block';
+          } else {
+            content.style.display = 'none';
+          }
+      })
+  })
+})

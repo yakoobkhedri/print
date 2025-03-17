@@ -1,17 +1,24 @@
 // menu
 
 let openmenu = document.getElementById('openmenu');
+let openmenu2 = document.getElementById('openmenu2');
 
 openmenu.addEventListener('click',function () {
   document.querySelector('.menu').classList.add('active');
   document.getElementById('overlay').classList.add('active');
 })
-
+openmenu2.addEventListener('click',function () {
+  document.querySelector('.menu2').classList.add('active');
+  document.getElementById('overlay2').classList.add('active');
+})
 document.getElementById('overlay').addEventListener('click',function () {
   document.querySelector('.menu').classList.remove('active');
   document.getElementById('overlay').classList.remove('active');
 })
-
+document.getElementById('overlay2').addEventListener('click',function () {
+  document.querySelector('.menu2').classList.remove('active');
+  document.getElementById('overlay2').classList.remove('active');
+})
 // swiper
 var customer = new Swiper(".customer", {
   slidesPerView: 2,
