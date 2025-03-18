@@ -171,13 +171,13 @@ input{
 .gray-hover{
     position: relative;
 }
-.gray-hover:hover{
+.gray-hover:hover,.gray-hover.active{
     background-color: #f7f8fa;
 }
 .gray-hover svg{
     color: #bbb;
 }
-.gray-hover:hover svg{
+.gray-hover:hover svg,.gray-hover.active svg{
     color: #27ab7c;
 }
 .bg-main{

@@ -8,34 +8,10 @@
   <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/styles.css'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <title>ثبت سفارش</title>
+  <title>لیست سفارشات</title>
 </head>
 
 <body>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">راهنمای ثبت سفارش</h1>
-          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="text-justify text-secondary">
-            برای ثبت سفارس لطفا فایلها را جداگانه ثبت کنید<br>
-            اطلاعات فایل اول را وارد کنید ، افزودن به سبد خرید بزنید و سپس فایل بعدی را وارد کنید<br>
-            اگر فایلهای شما از ویژگی مشترک برخوردار هستند مثلا همه دو رو و بدون صحافی سیمی یا همه یک رو بدون صحافی سیمی
-            جمع کل آنها را در سایت وارد کنید و فایلها را در واتساپ یا تلگرام ارسال کنید
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn bg-main3 text-white rounded-3 fw-bold w-100"
-            data-bs-dismiss="modal">بستن</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <div id="overlay"></div>
@@ -110,7 +86,7 @@
   <main>
 
     <!-- pannel -->
-    <section>
+    <section class="mb-5">
       <div class="container max-w-1300">
         <div class="d-flex m-sm-3 m-2 gap-3">
           <div id="sidebar"
@@ -158,7 +134,7 @@
                 </a>
               </li>
               <li>
-                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover active rounded-5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-file-earmark-text" viewBox="0 0 16 16">
                     <path
@@ -233,269 +209,205 @@
               </li>
             </ul>
           </div>
-          <div class="flex-grow-1 p-sm-3 p-2 bg-white shadow-1 rounded-8 pb-5">
+          <div class="flex-grow-1 p-3 pt-sm-4 bg-white shadow-1 rounded-8">
             <svg id="openmenu2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
               class="bi bi-list-nested cursor-pointer mb-2 d-lg-none" viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5" />
             </svg>
-            <div class="rounded-5 bg-gray2 p-3 flex-column flex-md-row d-flex align-items-center gap-3 fw-bold">
-              <div class="flex-grow-1 text-secondary">
-                <p class="mb-1">نکته: لطفا برای ثبت آسانتر روی علامت آبی کلیک کنید</p>
-                <p class="mb-1">(تعرفه هر برگ بر اساس جمع کل ردیف های فاکتور شما محاسبه می شود و برحسب تعداد متغیر است)
-                </p>
-                <p class="mb-1">لطفا در هنگام وارد کردن اعداد کیبورد را در حالت لاتین قرار دهید</p>
-              </div>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal"
-                class="rounded-8 bg-main3 py-2 px-3 text-white flex-shrink-0">راهنمای ثبت سفارش</a>
-            </div>
-            <div class="row mx-0 g-3 mt-0">
-              <div class="col-xl-4 px-0 px-xl-1">
-                <div class="bg-gray2 rounded-5 p-sm-3 p-2">
-                  <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">ارسال فایل از طریق
-                  </h5>
-                  <div class="d-flex align-items-center justify-content-between gap-1 text-center fw-bold fs-12 mt-3">
-                    <a data-id="1" class="tabs text-dark active">
-                      <img alt="icon" src="../assets/img/975645.png" class="w-40 h-40">
-                      <p class="mb-0 mt-2">پنل سایت</p>
-                    </a>
-                    <a data-id="2" class="tabs text-dark">
-                      <img alt="icon" src="../assets/img/refresh.png" class="w-40 h-40">
-                      <p class="mb-0 mt-2">ایتا</p>
-                    </a>
-                    <a data-id="3" class="tabs text-dark">
-                      <img alt="icon" src="../assets/img/Telegram-Logo.png" class="w-40 h-40">
-                      <p class="mb-0 mt-2">تلگرام</p>
-                    </a>
-                    <a data-id="4" class="tabs text-dark">
-                      <img alt="icon" src="../assets/img/WhatsApp.svg.webp" class="w-40 h-40">
-                      <p class="mb-0 mt-2">واتساپ</p>
-                    </a>
+            <h4 class="fs-18 fw-bold">سفارشات من</h4>
+            <div class="mt-4">
+              <div class="border rounded-5 p-4 mb-4 d-flex align-items-start gap-3 flex-wrap">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-content-center gap-4 fs-14 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                       <p class="mb-0">شماره سفارش:</p>
+                       <p class="fw-bold mb-0">20252-16881595</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0">مبلغ کل:</p>
+                      <p class="fw-bold mb-0">1,000 تومان</p>
+                   </div>
+                   <div class="bg-danger rounded-5 px-2 py-1 fs-14 text-white">در انتظار پرداخت</div>
+                   <div class="d-flex align-items-center gap-2">
+                    <p class="mb-0">تاریخ ثبت:</p>
+                    <p class="fw-bold mb-0">1403/11/20</p>
+                 </div>
                   </div>
-                  <div class="tabContent">
-                    <div data-id="1">
-                      <form class="mt-3">
-                        <div class="border-dashed-2 rounded-8 p-2 p-sm-3 bg-white position-relative">
-                          <input multiple accept=".pdf,.doc,.docx,.jpg,.jpeg" type="file" id="fileInput"
-                            class="position-absolute opacity-0 w-100 h-100 top-0 bottom-0 end-0 start-0 cursor-pointer">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
-                            class="bi bi-cloud-arrow-up-fill mx-auto d-block" viewBox="0 0 16 16">
-                            <path
-                              d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z" />
-                          </svg>
-                          <p class="text-center fw-bold my-1 fs-14">افزودن فایل</p>
-                          <p class="text-danger fw-bold fs-12">شما می توانید یک یا چند فایل را با مشخصات چاپی یکسان با
-                            هم
-                            آپلود کنید</p>
-                          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 fw-bold fs-12">
-                            <p class="mb-0">حداکثر حجم فایل: 500MB</p>
-                            <p class="mb-0">نوع فایل: pdf/word/jpg</p>
-                          </div>
-                        </div>
-                        <div class="mt-3">
-                          <label class="fw-bold fs-12"> توضیحات فایل/شماره یا آی دی اکانت خود را وارد نمایید </label>
-                          <textarea rows="5" class="form-control fs-12 mt-2"
-                            placeholder=" توضیحات فایل/شماره یا آی دی اکانت خود را وارد نمایید "></textarea>
-                        </div>
-                      </form>
-                    </div>
-                    <div data-id="2">
-                      <div class="mt-3">
-                        <label class="fw-bold fs-12"> فایل/فایلهای خود را به آیدی ایتا @topcopyy ارسال کرده و حتما آیدی
-                          یا شماره ایتا خود را در کادر زیر وارد نمایید. </label>
-                        <textarea rows="5" class="form-control fs-12 mt-2"
-                          placeholder=" فایل/فایلهای خود را به آیدی ایتا @topcopyy ارسال کرده و حتما آیدی یا شماره ایتا خود را در کادر زیر وارد نمایید. "></textarea>
-                      </div>
-                    </div>
-                    <div data-id="3">
-                      <div class="mt-3">
-                        <label class="fw-bold fs-12"> فایل/فایلهای خود را به آیدی تلگرام @topcopyy ارسال کرده و حتما
-                          آیدی یا شماره تلگرام خود را در کادر زیر وارد نمایید. </label>
-                        <textarea rows="5" class="form-control fs-12 mt-2"
-                          placeholder=" فایل/فایلهای خود را به آیدی تلگرام @topcopyy ارسال کرده و حتما آیدی یا شماره تلگرام خود را در کادر زیر وارد نمایید. "></textarea>
-                      </div>
-                    </div>
-                    <div data-id="4">
-                      <div class="mt-3">
-                        <label class="fw-bold fs-12"> فایل/فایلهای خود را به شماره واتساپ 09126706629 ارسال کرده و حتما
-                          آیدی یا شماره واتساپ خود را در کادر زیر وارد نمایید. </label>
-                        <textarea rows="5" class="form-control fs-12 mt-2"
-                          placeholder="فایل/فایلهای خود را به شماره واتساپ 09126706629 ارسال کرده و حتما آیدی یا شماره واتساپ خود را در کادر زیر وارد نمایید."></textarea>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-4">
+                    <p class="mb-0">اقلام سفارش:</p>
+                    <a>
+                      <img alt="img" src="../assets/img/GU73BrotZvMeJko_60.jpg">
+                    </a>
+                 </div>
                 </div>
+                <a class="flex-shrink-0 d-flex align-items-center justify-content-center p-2 px-3 gap-2 rounded-5 bg-success text-white">
+                  <p class="mb-0">مشاهده جزئیات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+                </a>
               </div>
-              <div class="col-xl-5 px-0 px-xl-1">
-                <div class="bg-gray2 rounded-5 p-sm-3 p-2">
-                  <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">مشخصات پرینت فایل
-                  </h5>
-                  <form class="fw-bold mt-3">
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">ابعاد کاغذ:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <div
-                          class="position-relative active size border-dashed-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
-                          A5
-                          <input checked type="radio" name="size"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative size border-dashed-2 bg-white cursor-pointer w-46 h-63 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
-                          A4
-                          <input checked type="radio" name="size"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-
-                        <div
-                          class="position-relative size border-dashed-2 bg-white cursor-pointer w-53 h-78 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
-                          A3
-                          <input checked type="radio" name="size"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                      </div>
+              <div class="border rounded-5 p-4 mb-4 d-flex align-items-start gap-3 flex-wrap">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-content-center gap-4 fs-14 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                       <p class="mb-0">شماره سفارش:</p>
+                       <p class="fw-bold mb-0">20252-16881595</p>
                     </div>
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">یکرو / دو رو:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <div
-                          class="position-relative flex-shrink-0 active roo border border-danger border-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
-                          یکرو
-                          <input checked type="radio" name="roo"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 roo border border-danger border-2 bg-white cursor-pointer w-40 h-51 rounded-5 d-flex align-items-center justify-content-center fw-bold fs-14">
-                          دو رو
-                          <input checked type="radio" name="roo"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <p class="mb-0 text-danger fw-bold fs-10 text-justify">(هر 100 صفحه شامل 50 برگ دو رو
-                          میباشد)<br>
-                          (قیمت هر برگ دو رو: 1000 تومان)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">تعداد برگ:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <input type="number" class="border border-danger border-2 rounded-5 text-center w-53">
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">تعداد نسخه:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <input type="number" class="border border-danger border-2 rounded-5 text-center w-53">
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">صحافی:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <div
-                          class="position-relative flex-shrink-0 active sahafi fs-10 border border-danger border-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          نیاز ندارم
-                          <input checked type="radio" name="sahafi"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 sahafi fs-10 border border-danger border-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          منگنه
-                          <input checked type="radio" name="sahafi"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 sahafi fs-10 border border-danger border-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          سیمی طلق معمولی
-                          <input checked type="radio" name="sahafi"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 sahafi fs-10 border border-danger border-2 bg-white cursor-pointer w-55 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          سیمی طلق ضخیم
-                          <input checked type="radio" name="sahafi"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">نوع صحافی:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <div
-                          class="position-relative flex-shrink-0 active sahafitype fs-10 border border-danger border-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          همه فایل ها با هم صحافی شود
-                          <input checked type="radio" name="sahafitype"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 sahafitype fs-10 border border-danger border-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          هر فایل جداگانه صحافی شود
-                          <input checked type="radio" name="sahafitype"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-2 border-bottom border-secondary pb-2">
-                      <p class="fs-13 mb-0 w-80 flex-shrink-0">نوع جلد:</p>
-                      <div class="d-flex align-items-end gap-2 flex-wrap">
-                        <div
-                          class="position-relative flex-shrink-0 active jeld fs-10 border border-danger border-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          سیاه و سفید
-                          <input checked type="radio" name="jeld"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 jeld fs-10 border border-danger border-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          رنگی
-                          <input checked type="radio" name="jeld"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                        <div
-                          class="position-relative flex-shrink-0 jeld fs-10 border border-danger border-2 bg-white cursor-pointer w-86 h-51 text-center rounded-5 d-flex align-items-center justify-content-center fw-bold">
-                          گلاسه
-                          <input checked type="radio" name="jeld"
-                            class="position-absolute cursor-pointer top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0">
-                        </div>
-                      </div>
-                    </div>
-                    <textarea class="border border-danger border-2 rounded-5 bg-white p-3 outline-none w-100"
-                      placeholder="توضیحات"></textarea>
-                  </form>
-                </div>
-              </div>
-              <div class="col-xl-3 px-0 px-xl-1">
-                <div class="bg-gray2 rounded-5 p-sm-3 p-2">
-                  <h5 class="text-center fw-bold text-secondary border-bottom border-secondary pb-2">خلاصه سفارش</h5>
-                  <div class="fw-bold mt-3">
-                    <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
-                      <p class="fs-13 mb-0">تعداد برگ</p>
-                      <p class="fs-13 mb-0">2 برگ</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
-                      <p class="fs-13 mb-0">هر برگ</p>
-                      <p class="fs-13 mb-0">1000 تومان</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
-                      <p class="fs-13 mb-0">مجموع</p>
-                      <p class="fs-13 mb-0">2000 تومان</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-between gap-2 border-bottom border-top border-secondary py-2">
-                      <p class="fs-13 mb-0">هزینه خدمات</p>
-                      <p class="fs-13 mb-0">100 تومان</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-between gap-2 border-bottom border-secondary py-2">
-                      <p class="fs-13 mb-0">قابل پرداخت</p>
-                      <p class="fw-bold mb-0 text-success">2100 تومان</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center justify-content-between gap-2 py-2">
-                      <a class="rounded-5 bg-white border border-info text-info py-2 px-3 fs-14 w-100 text-center">ادامه
-                        سفارش</a>
-                      <a class="rounded-5 bg-white border border-info text-info py-2 px-3 fs-14 w-100 text-center">ساخت
-                        پوشه بعدی</a>
-                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0">مبلغ کل:</p>
+                      <p class="fw-bold mb-0">1,000 تومان</p>
+                   </div>
+                   <div class="bg-dark rounded-5 px-2 py-1 fs-14 text-white">در حال پردازش</div>
+                   <div class="d-flex align-items-center gap-2">
+                    <p class="mb-0">تاریخ ثبت:</p>
+                    <p class="fw-bold mb-0">1403/11/20</p>
+                 </div>
                   </div>
+                  <div class="d-flex align-items-center gap-2 mt-4">
+                    <p class="mb-0">اقلام سفارش:</p>
+                    <a>
+                      <img alt="img" src="../assets/img/GU73BrotZvMeJko_60.jpg">
+                    </a>
+                 </div>
                 </div>
+                <a class="flex-shrink-0 d-flex align-items-center justify-content-center p-2 px-3 gap-2 rounded-5 bg-success text-white">
+                  <p class="mb-0">مشاهده جزئیات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="border rounded-5 p-4 mb-4 d-flex align-items-start gap-3 flex-wrap">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-content-center gap-4 fs-14 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                       <p class="mb-0">شماره سفارش:</p>
+                       <p class="fw-bold mb-0">20252-16881595</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0">مبلغ کل:</p>
+                      <p class="fw-bold mb-0">1,000 تومان</p>
+                   </div>
+                   <div class="bg-main2 rounded-5 px-2 py-1 fs-14 text-white">تایید شده</div>
+                   <div class="d-flex align-items-center gap-2">
+                    <p class="mb-0">تاریخ ثبت:</p>
+                    <p class="fw-bold mb-0">1403/11/20</p>
+                 </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-4">
+                    <p class="mb-0">اقلام سفارش:</p>
+                    <a>
+                      <img alt="img" src="../assets/img/GU73BrotZvMeJko_60.jpg">
+                    </a>
+                 </div>
+                </div>
+                <a class="flex-shrink-0 d-flex align-items-center justify-content-center p-2 px-3 gap-2 rounded-5 bg-success text-white">
+                  <p class="mb-0">مشاهده جزئیات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="border rounded-5 p-4 mb-4 d-flex align-items-start gap-3 flex-wrap">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-content-center gap-4 fs-14 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                       <p class="mb-0">شماره سفارش:</p>
+                       <p class="fw-bold mb-0">20252-16881595</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0">مبلغ کل:</p>
+                      <p class="fw-bold mb-0">1,000 تومان</p>
+                   </div>
+                   <div class="bg-danger rounded-5 px-2 py-1 fs-14 text-white">در انتظار پرداخت</div>
+                   <div class="d-flex align-items-center gap-2">
+                    <p class="mb-0">تاریخ ثبت:</p>
+                    <p class="fw-bold mb-0">1403/11/20</p>
+                 </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-4">
+                    <p class="mb-0">اقلام سفارش:</p>
+                    <a>
+                      <img alt="img" src="../assets/img/GU73BrotZvMeJko_60.jpg">
+                    </a>
+                 </div>
+                </div>
+                <a class="flex-shrink-0 d-flex align-items-center justify-content-center p-2 px-3 gap-2 rounded-5 bg-success text-white">
+                  <p class="mb-0">مشاهده جزئیات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="border rounded-5 p-4 mb-4 d-flex align-items-start gap-3 flex-wrap">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-content-center gap-4 fs-14 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                       <p class="mb-0">شماره سفارش:</p>
+                       <p class="fw-bold mb-0">20252-16881595</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0">مبلغ کل:</p>
+                      <p class="fw-bold mb-0">1,000 تومان</p>
+                   </div>
+                   <div class="bg-dark rounded-5 px-2 py-1 fs-14 text-white">در حال پردازش</div>
+                   <div class="d-flex align-items-center gap-2">
+                    <p class="mb-0">تاریخ ثبت:</p>
+                    <p class="fw-bold mb-0">1403/11/20</p>
+                 </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-4">
+                    <p class="mb-0">اقلام سفارش:</p>
+                    <a>
+                      <img alt="img" src="../assets/img/GU73BrotZvMeJko_60.jpg">
+                    </a>
+                 </div>
+                </div>
+                <a class="flex-shrink-0 d-flex align-items-center justify-content-center p-2 px-3 gap-2 rounded-5 bg-success text-white">
+                  <p class="mb-0">مشاهده جزئیات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="border rounded-5 p-4 mb-4 d-flex align-items-start gap-3 flex-wrap">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-content-center gap-4 fs-14 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                       <p class="mb-0">شماره سفارش:</p>
+                       <p class="fw-bold mb-0">20252-16881595</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0">مبلغ کل:</p>
+                      <p class="fw-bold mb-0">1,000 تومان</p>
+                   </div>
+                   <div class="bg-main2 rounded-5 px-2 py-1 fs-14 text-white">تایید شده</div>
+                   <div class="d-flex align-items-center gap-2">
+                    <p class="mb-0">تاریخ ثبت:</p>
+                    <p class="fw-bold mb-0">1403/11/20</p>
+                 </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-4">
+                    <p class="mb-0">اقلام سفارش:</p>
+                    <a>
+                      <img alt="img" src="../assets/img/GU73BrotZvMeJko_60.jpg">
+                    </a>
+                 </div>
+                </div>
+                <a class="flex-shrink-0 d-flex align-items-center justify-content-center p-2 px-3 gap-2 rounded-5 bg-success text-white">
+                  <p class="mb-0">مشاهده جزئیات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
