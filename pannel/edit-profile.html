@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/styles.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>ویرایش حساب کاربری</title>
+</head>
+
+<body>
+
+
+  <div id="overlay"></div>
+  <div id="overlay2"></div>
+
+  <!-- header -->
+
+  <header class="p-3 position-sticky top-0 z-99">
+    <div
+      class="container  max-w-1300 position-relative d-flex align-items-center justify-content-between justify-content-xl-center gap-2">
+      <svg id="openmenu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+        class="w-sm-24 bi bi-list d-lg-none cursor-pointer" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+      <a class="position-absolute end-0 top-0 mt-1 d-block d-lg-none d-xl-block right-sm-38 right-lg-52"><img
+          class="w-66 w-sm-48" alt="logo" src="../assets/img/logo.png"></a>
+      <div
+        class="d-flex flex-column menu py-4 py-lg-0 flex-lg-row align-items-center justify-content-xl-center gap-lg-1 gap-3 top-0 position-lg-fixed">
+        <a href="#banner" class="box active d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/home.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">خانه</p>
+          </div>
+        </a>
+        <a href="#" class="box d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/service.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">خدمات</p>
+          </div>
+        </a>
+        <a href="#" class="box d-block text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/home.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">قیمت پرینت</p>
+          </div>
+        </a>
+        <a href="#" class="box d-block text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/print.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">نمونه کارها</p>
+          </div>
+        </a>
+        <a href="#" class="box d-block text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/article.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">مقالات</p>
+          </div>
+        </a>
+        <a href="#" class="box d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/user.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">درباره ما</p>
+          </div>
+        </a>
+        <a href="#" class="box d-none d-lg-flex text-center align-items-center justify-content-center">
+          <div>
+            <img alt="img" src="../assets/img/icon/support.png" class="d-block mx-auto w-35 h-35">
+            <p class="mb-0 mt-2">تماس با ما</p>
+          </div>
+        </a>
+      </div>
+      <div class="position-absolute position-lg-static start-0 top-0 mt-2 d-flex align-items-center gap-1">
+        <a class="w-101 h-60 h-sm-41 w-sm-86 bg-main2 text-white rounded-5 flex-center">پنل کاربری</a>
+        <a class="w-101 h-60 h-sm-41 w-sm-86 bg-main2 text-white rounded-5 flex-center">پنل کاربری</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main>
+
+    <!-- pannel -->
+    <section class="mb-5">
+      <div class="container max-w-1300">
+        <div class="d-flex m-sm-3 m-2 gap-3">
+          <div id="sidebar"
+            class="menu2 w-280 rounded-8 flex-shrink-0 bg-white h-100vh overflow-auto p-2 py-4 shadow-1 z-20">
+            <div class="border-bottom">
+              <div class="w-120 h-120 rounded-circle mx-auto position-relative">
+                <a
+                  class="w-44 h-44 border-7-white -left-11 me-3 bg-main3 rounded-circle position-absolute d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pencil-square text-white" viewBox="0 0 16 16">
+                    <path
+                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                  </svg>
+                </a>
+                <img alt="img" src="../assets/img/1.png" class="w-100 h-100 border-8-gray rounded-circle">
+              </div>
+              <p class="fs-18 fw-bold text-center mt-3 mb-1">09360008692</p>
+              <p class="fs-13 text-muted text-center">عضویت از 3 ماه پیش</p>
+            </div>
+            <ul class="list-unstyled p-0 mb-0 mt-4">
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-compass" viewBox="0 0 16 16">
+                    <path
+                      d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0" />
+                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                  </svg>
+                  <p class="mb-0">نگاه کلی</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z" />
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1" />
+                  </svg>
+                  <p class="mb-0">کیف پول
+                    <span class="fs-12 text-muted">(0 تومان)</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                    <path
+                      d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                    <path
+                      d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                  </svg>
+                  <p class="mb-0">سفارشات من</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                  </svg>
+                  <p class="mb-0">محصولات موردعلاقه</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                  </svg>
+                  <p class="mb-0">مقالات نشان‌شده</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-headphones" viewBox="0 0 16 16">
+                    <path
+                      d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                  </svg>
+                  <p class="mb-0">تیکت‌های پشتیبانی</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover active rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pencil" viewBox="0 0 16 16">
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                  </svg>
+                  <p class="mb-0">ویرایش حساب کاربری</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-dark fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z" />
+                  </svg>
+                  <p class="mb-0">آدرس های من</p>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center gap-2 text-danger fs-14 p-3 py-2 gray-hover rounded-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-right text-danger" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                    <path fill-rule="evenodd"
+                      d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                  </svg>
+                  <p class="mb-0">خروج از حساب کاربری</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-grow-1 row mx-0 px-0">
+            <div class="col-lg-8">
+              <div class="p-3 pt-sm-4 bg-white shadow-1 rounded-8">
+                <svg id="openmenu2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-list-nested cursor-pointer mb-2 d-lg-none" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <h4 class="fs-18 fw-bold">اطلاعات حساب من</h4>
+                <form class="mt-4">
+                  <div class="w-120 h-120 rounded-5 mx-auto position-relative">
+                    <a class="w-44 h-44 border-7-white -left-11 me-3 bg-main3 rounded-circle position-absolute d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square text-white" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
+                      </svg>
+                    </a>
+                    <img alt="img" src="../assets/img/1.png" class="w-100 h-100 rounded-5">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-gray pt-4 mt-sm-5">
+    <div class="container max-w-1300">
+      <div class="row mx-0 g-4">
+        <div class="col-xl-3 col-lg-4">
+          <h5 class="font-bold fs-sm-14">تماس با ما</h5>
+          <div class="ms-5 my-4">
+            <a class="d-flex align-items-center justify-content-end gap-1 mb-2">
+              <p class="mb-0 fw-bold text-dark">021-6646776</p>
+              <div class="flex-center w-35 h-35 rounded-5 bg-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone text-white" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+              </div>
+            </a>
+            <a class="d-flex align-items-center justify-content-end gap-1 mb-2">
+              <p class="mb-0 fw-bold text-dark">09360006692</p>
+              <div class="flex-center w-35 h-35 rounded-5 bg-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone text-white" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+              </div>
+            </a>
+            <a class="d-flex align-items-center justify-content-end gap-1 mb-2">
+              <p class="mb-0 fw-bold text-dark">inf@yahoo.com</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="35" fill="currentColor"
+                class="bi bi-envelope-fill text-dark" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+              </svg>
+            </a>
+          </div>
+          <p class="text-justify fs-sm-12">
+            آدرس: شیراز، میدان انقلاب، خ انقلاب، و 12 فروردین ساختمان 310 زیر همکف
+          </p>
+          <div class="position-relative">
+            <a
+              class="position-absolute bg-white py-2 px-3 bottom-0 m-2 d-block text-dark rounded-5 border shadow fw-bold fs-11 mb-3">مشاهده
+              در نشان</a>
+            <a
+              class="position-absolute bg-white py-2 px-3 start-0 bottom-0 m-2 d-block text-dark rounded-5 border shadow fw-bold fs-11 mb-3">مشاهده
+              در بلد</a>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0246229459626!2d51.39144231525939!3d35.70101168018984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ec5dabaefc4a340!2zMzXCsDQyJzAzLjYiTiA1McKwMjMnMzcuMSJF!5e0!3m2!1sen!2sde!4v1653744781198!5m2!1sen!2sde"
+              width="100%" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 mx-auto">
+          <h5 class="font-bold mb-4 fs-sm-14">لینک در دسترس</h5>
+          <ul class="list-unstyled pe-0 fs-sm-12">
+            <li class="mb-4">
+              <a>صفحه اصلی</a>
+            </li>
+            <li class="mb-4">
+              <a>پرینت سیاه سفید</a>
+            </li>
+            <li class="mb-4">
+              <a>پرینت رنگی</a>
+            </li>
+            <li class="mb-4">
+              <a>فهرست مقالات</a>
+            </li>
+            <li>
+              <a>تیکت پشتیبانی</a>
+            </li>
+            </li>
+          </ul>
+          <h5 class="font-bold my-4 fs-sm-14">شبکه های اجتماعی</h5>
+          <div>
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-6">
+          <h5 class="font-bold mb-4 fs-sm-14">راهنمایی</h5>
+          <ul class="list-unstyled pe-0 fs-sm-12">
+            <li class="mb-4">
+              <a>قوانین سایت</a>
+            </li>
+            <li class="mb-4">
+              <a>نحوه سفارش گذاری</a>
+            </li>
+            <li class="mb-4">
+              <a>درباره ما</a>
+            </li>
+            <li>
+              <a>تماس با ما</a>
+            </li>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <a class="bg-white p-1 w-167 h-200 h-sm-95">
+              <img alt="img" src="../assets/img/ENAMADpng.parspng.com_.png" class="w-100 h-100 h-sm-auto">
+            </a>
+            <a class="bg-white p-1 w-167 h-200 h-sm-95">
+              <img alt="img" src="../assets/img/samandehi.png" class="w-100 h-100">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fs-11 px-2 fw-bold d-lg-none mx-auto end-0 start-0 bottom-0 position-fixed z-2">
+    <div
+      class="d-flex gap-2 max-w-360 m-3 mx-auto border-main-2 rounded-20 p-2 align-items-center justify-content-center">
+      <a href="#banner"
+        class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 active d-block text-center d-flex align-items-center justify-content-center">
+        <div>
+          <img alt="img" src="../assets/img/icon/home.png" class="d-block mx-auto w-23 h-23">
+          <p class="mb-0 mt-1">خانه</p>
+        </div>
+      </a>
+      <a href="#"
+        class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 d-block text-center d-flex align-items-center justify-content-center">
+        <div>
+          <img alt="img" src="../assets/img/icon/service.png" class="d-block mx-auto w-23 h-23">
+          <p class="mb-0 mt-1">خدمات</p>
+        </div>
+      </a>
+      <a href="#"
+        class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 d-block text-center d-flex align-items-center justify-content-center">
+        <div>
+          <img alt="img" src="../assets/img/icon/user.png" class="d-block mx-auto w-23 h-23">
+          <p class="mb-0 mt-1">درباره ما</p>
+        </div>
+      </a>
+      <a href="#"
+        class="box m-0 flex-grow-1 w-100 h-auto py-3 px-1 d-block text-center d-flex align-items-center justify-content-center">
+        <div>
+          <img alt="img" src="../assets/img/icon/support.png" class="d-block mx-auto w-23 h-23">
+          <p class="mb-0 mt-1">تماس با ما</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+
+</html>
