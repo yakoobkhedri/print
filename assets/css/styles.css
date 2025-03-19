@@ -66,6 +66,9 @@ input{
 .w-23{
     width: 23px;
 }
+.w-30{
+    width: 30px;
+}
 .w-35{
     width: 35px;
 }
@@ -107,6 +110,9 @@ input{
 }
 .w-280{
     width: 218px;
+}
+.h-3{
+    height: 3px;
 }
 .h-12{
     height: 12px;
@@ -179,6 +185,16 @@ input{
 }
 .gray-hover:hover svg,.gray-hover.active svg{
     color: #27ab7c;
+}
+.brightness-75{
+    filter: brightness(75%);
+}
+.form-floating > label{
+    right: 0;
+    left: auto;
+}
+.form-floating > .form-control:not(:placeholder-shown) ~ label{
+    color: black !important;
 }
 .bg-main{
     background-color: #baebe3;
