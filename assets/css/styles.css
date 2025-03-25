@@ -109,7 +109,7 @@ input{
     width: 167px;
 }
 .w-280{
-    width: 218px;
+    width: 300px;
 }
 .h-3{
     height: 3px;
@@ -399,10 +399,11 @@ footer{
         top: 0;
         bottom: 0;
         height: 100%;
-        right: -240px;
+        left: -340px;
+        right: auto;
     }
     #sidebar.active{
-       right: 0;
+       left: 0;
     }
     .right-lg-52{
         right: 52px !important;
