@@ -75,14 +75,17 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         document.querySelector('form').appendChild(fileList);
     }
 
-    fileList.innerHTML = '';
-
     if (files.length === 0) {
-        fileList.remove();
+        // فقط اگر هیچ فایلی وجود ندارد، لیست را پاک کنید
+        if (fileList.children.length === 0) {
+            fileList.remove();
+        }
         return;
     }
 
-    let fileNumber = 1;
+    // شمارنده را بر اساس تعداد فایل‌های موجود + 1 تنظیم می‌کنیم
+    const existingFiles = fileList.querySelectorAll('.file-item');
+    let fileNumber = existingFiles.length + 1;
 
     for (let i = 0; i < files.length; i++) {
         const file = files[i];
